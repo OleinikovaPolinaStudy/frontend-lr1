@@ -273,3 +273,11 @@ nav {
     padding: 1em 2em!important;
   }
 }
+
+.svgAssetHidden{
+  visibility:hidden;
+  position:absolute;
+  width:0;
+  height:0;
+  overflow:hidden;
+}
