@@ -13,59 +13,62 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark position-fixed w-100">
-            <div class="container">
-                <a class="navbar-brand p-0" href="." aria-label="logo">
-                    <img src="src/images/Лого.png" width="40" height="40" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark position-fixed w-100">
+        <div class="container">
+            <a class="navbar-brand p-0" href="." aria-label="logo">
+                <svg width="40" height="40">
+                    <use xlink:href="./src/images/sprite.svg#logo"></use>
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Главная</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#events">Мероприятия</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#leaders">Руководители</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#participants">Участники</a>
-                        </li>
-                    </ul>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Мероприятия</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#leaders">Руководители</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#participants">Участники</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="home">
+        <div class="container">
+            <div class="row justify-content-md-center pt-5">
+                <div class="col-md-5 px-0 pt-5 mt-5 element-animation" id="name">
+                    <h1>Клуб фронтенд разработки FTML</h1>
+                    <p>Хочешь заниматься фронтендом или уже что-то умеешь? Вступай в наш клуб и найти
+                        единомышленников
+                    </p>
+                    <a class="btn btn-ftml" target="_blank" href="https://vk.com/ftmlclub">Вступить</a>
+                </div>
+                <div class="col-md-7 pt-5 element-animation">
+                    <img class="w-100" src="./src/images/Кртинка%20с%20ноутом.png" alt="">
                 </div>
             </div>
-        </nav>
-        <div id="home">
-            <div class="container">
-                <div class="row justify-content-md-center pt-5">
-                    <div class="col-md-5 px-0 pt-5 mt-5 element-animation" id="name">
-                        <h1>Клуб фронтенд разработки FTML</h1>
-                        <p>Хочешь заниматься фронтендом или уже что-то умеешь? Вступай в наш клуб и найти
-                            единомышленников
-                        </p>
-                        <a class="btn btn-ftml" target="_blank" href="https://vk.com/ftmlclub">Вступить</a>
-                    </div>
-                    <div class="col-md-7 pt-5 element-animation">
-                        <img class="w-100" src="./src/images/Кртинка%20с%20ноутом.png" alt="">
-                    </div>
-                </div>
-                <div class="col pt-5 element-animation">
-                    <h2>Для кого создан клуб?</h2>
-                    <ul class="list-ftml">
-                        <li>начинающие разработчики</li>
-                        <li>люди, заинтересованные получить свой первый опыт в разработке реальных кейсов</li>
-                        <li>опытные разработчики </li>
-                    </ul>
-                </div>
+            <div class="col pt-5 element-animation">
+                <h2>Для кого создан клуб?</h2>
+                <ul class="list-ftml">
+                    <li>начинающие разработчики</li>
+                    <li>люди, заинтересованные получить свой первый опыт в разработке реальных кейсов</li>
+                    <li>опытные разработчики</li>
+                </ul>
             </div>
-            <div class="container">
+        </div>
+        <div class="container">
             <div class="row p-5 m-0 justify-content-md-center element-animation">
                 <div class="text-ftml col text-center col-lg-9">
                     <p class="p-0 m-0">Клуб будет полезен студентам, которые хотят чего-то большего. Если ты готов
@@ -73,238 +76,250 @@
                         hard
                         skills в клиентской стороне пользовательского интерфейса, то тебе к нам</p>
                 </div>
-            </div></div>
-        </div>
-    </header>
-    <div class="container py-4" id="events">
-        <div class="row py-5 justify-content-center align-items-center element-animation">
-            <div class="col-md-6">
-                <h2>Ближайшие мероприятия</h2>
-                <p class="pt-4 mt-3">Не переживай, что ничего глобального пока не происходит — все хакатаны еще будут!
-                </p>
-                <p>А чтобы уж точно ничего не пропустить, подписывайся на нашу группу во “Вконтакте”</p>
-                <a class="btn btn-ftml mt-3" target="_blank" href="https://vk.com/ftmlclub">Вступить</a>
             </div>
-            <div class="col-md-6 d-flex justify-content-center pt-3 mb-5" id="bulb">
-                <div class="w-50 d-flex justify-content-center">
-                    <img class="w-75" src="src/images/Лампочка.png" alt="">
+        </div>
+    </div>
+</header>
+<div class="container py-4" id="events">
+    <div class="row py-5 justify-content-center align-items-center element-animation">
+        <div class="col-md-6">
+            <h2>Ближайшие мероприятия</h2>
+            <p class="pt-4 mt-3">Не переживай, что ничего глобального пока не происходит — все хакатаны еще будут!
+            </p>
+            <p>А чтобы уж точно ничего не пропустить, подписывайся на нашу группу во “Вконтакте”</p>
+            <a class="btn btn-ftml mt-3" target="_blank" href="https://vk.com/ftmlclub">Вступить</a>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center pt-3 mb-5" id="bulb">
+            <div class="w-50 d-flex justify-content-center">
+                <img class="w-75" src="src/images/Лампочка.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-ftml">
+    <div class="bg-ftml2">
+        <div class="pt-5" id="leaders">
+            <div class="element-animation container py-3">
+                <h2>Руководители</h2>
+            </div>
+            <div class="carousel w-100" id="carousel">
+                <div class="element-animation gallery">
+                    <ul class="images p-0">
+                        <li>
+                            <a target="_blank" href="https://vk.com/ruslan_nya">
+                                <div class=" carousel-item-ftml ">
+                                    <img src="https://sun9-29.userapi.com/impg/MQUZfXt8RbMBS1XYmflDg9dJfxsPTtYKWF7-cw/roMYaahrSrM.jpg?size=1440x2160&quality=96&sign=d8a4b4f864311c6dfd794bc986e24cd9&type=album"
+                                         alt="">
+                                </div>
+                                <p>Сулейманов Руслан</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://vk.com/br0ke_b0y">
+                                <div class=" carousel-item-ftml ">
+                                    <img src="https://sun9-36.userapi.com/impg/fvp0sN5ZjwI_E7yrLUIG9U2qBP_AEXdaw9frcQ/5WbN8VnTl8w.jpg?size=1401x1401&quality=96&sign=b10d08cd153dd6b275c873e3742a90ba&type=album"
+                                         alt="">
+                                </div>
+                                <p>Береснев Андрей</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://vk.com/prokhn">
+                                <div class=" carousel-item-ftml ">
+                                    <img src="https://sun9-52.userapi.com/s/v1/if1/ZSdqsc6f15JuHnqzD2BVo9ZVvyyYaS6ujJ0vBdV1KF9BzVVWLXu01IxrNyGHqGKiqRzObZa_.jpg?size=200x266&quality=96&crop=938,149,891,1186&ava=1"
+                                         alt="">
+                                </div>
+                                <p>Николай Прохоров</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://vk.com/ruslan_nya">
+                                <div class=" carousel-item-ftml ">
+                                    <img src="https://sun9-29.userapi.com/impg/MQUZfXt8RbMBS1XYmflDg9dJfxsPTtYKWF7-cw/roMYaahrSrM.jpg?size=1440x2160&quality=96&sign=d8a4b4f864311c6dfd794bc986e24cd9&type=album"
+                                         alt="">
+                                </div>
+                                <p>Сулейманов Руслан</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://vk.com/br0ke_b0y">
+                                <div class=" carousel-item-ftml ">
+                                    <img src="https://sun9-36.userapi.com/impg/fvp0sN5ZjwI_E7yrLUIG9U2qBP_AEXdaw9frcQ/5WbN8VnTl8w.jpg?size=1401x1401&quality=96&sign=b10d08cd153dd6b275c873e3742a90ba&type=album"
+                                         alt="">
+                                </div>
+                                <p>Береснев Андрей</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://vk.com/prokhn">
+                                <div class=" carousel-item-ftml ">
+                                    <img src="https://sun9-52.userapi.com/s/v1/if1/ZSdqsc6f15JuHnqzD2BVo9ZVvyyYaS6ujJ0vBdV1KF9BzVVWLXu01IxrNyGHqGKiqRzObZa_.jpg?size=200x266&quality=96&crop=938,149,891,1186&ava=1"
+                                         alt="">
+                                </div>
+                                <p>Николай Прохоров</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://vk.com/ruslan_nya">
+                                <div class=" carousel-item-ftml ">
+                                    <img src="https://sun9-29.userapi.com/impg/MQUZfXt8RbMBS1XYmflDg9dJfxsPTtYKWF7-cw/roMYaahrSrM.jpg?size=1440x2160&quality=96&sign=d8a4b4f864311c6dfd794bc986e24cd9&type=album"
+                                         alt="">
+                                </div>
+                                <p>Сулейманов Руслан</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://vk.com/br0ke_b0y">
+                                <div class=" carousel-item-ftml ">
+                                    <img src="https://sun9-36.userapi.com/impg/fvp0sN5ZjwI_E7yrLUIG9U2qBP_AEXdaw9frcQ/5WbN8VnTl8w.jpg?size=1401x1401&quality=96&sign=b10d08cd153dd6b275c873e3742a90ba&type=album"
+                                         alt="">
+                                </div>
+                                <p>Береснев Андрей</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://vk.com/prokhn">
+                                <div class=" carousel-item-ftml ">
+                                    <img src="https://sun9-52.userapi.com/s/v1/if1/ZSdqsc6f15JuHnqzD2BVo9ZVvyyYaS6ujJ0vBdV1KF9BzVVWLXu01IxrNyGHqGKiqRzObZa_.jpg?size=200x266&quality=96&crop=938,149,891,1186&ava=1"
+                                         alt="">
+                                </div>
+                                <p>Николай Прохоров</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="scroll pb-5 container d-flex align-items-center justify-content-center">
+                    <button class="arrow p-0 border-0 prev" aria-label="prev">
+                        <svg width="40" height="40">
+                            <use xlink:href="./src/images/sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+                    <div class="progress w-100">
+                        <div class="progress-bar" id="progress-bar-1" role="progressbar" aria-valuemin="0"
+                             aria-valuemax="100" aria-label="no-active"></div>
+                        <div class="progress-bar bg-progress-bar-ftml" id="progress-bar-2" role="progressbar"
+                             aria-valuemin="0" aria-valuemax="100" aria-label="active"></div>
+                        <div class="progress-bar" id="progress-bar-3" role="progressbar" aria-valuemin="0"
+                             aria-valuemax="100" aria-label="no-active"></div>
+                    </div>
+                    <button class="arrow p-0 border-0 next" aria-label="next">
+                        <svg width="40" height="40">
+                            <use xlink:href="./src/images/sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="bg-ftml">
-        <div class="bg-ftml2">
-            <div class="pt-5" id="leaders">
-                <div class="element-animation container py-3">
-                    <h2>Руководители</h2>
-                </div>
-                <div class="carousel w-100" id="carousel">
-                    <div class="element-animation gallery">
-                        <ul class="images p-0">
-                            <li>
-                                <a target="_blank" href="https://vk.com/ruslan_nya">
-                                    <div class=" carousel-item-ftml ">
-                                        <img src="https://sun9-29.userapi.com/impg/MQUZfXt8RbMBS1XYmflDg9dJfxsPTtYKWF7-cw/roMYaahrSrM.jpg?size=1440x2160&quality=96&sign=d8a4b4f864311c6dfd794bc986e24cd9&type=album"
-                                            alt="">
-                                    </div>
-                                    <p>Сулейманов Руслан</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://vk.com/br0ke_b0y">
-                                    <div class=" carousel-item-ftml ">
-                                        <img src="https://sun9-36.userapi.com/impg/fvp0sN5ZjwI_E7yrLUIG9U2qBP_AEXdaw9frcQ/5WbN8VnTl8w.jpg?size=1401x1401&quality=96&sign=b10d08cd153dd6b275c873e3742a90ba&type=album"
-                                            alt="">
-                                    </div>
-                                    <p>Береснев Андрей</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://vk.com/prokhn">
-                                    <div class=" carousel-item-ftml ">
-                                        <img src="https://sun9-52.userapi.com/s/v1/if1/ZSdqsc6f15JuHnqzD2BVo9ZVvyyYaS6ujJ0vBdV1KF9BzVVWLXu01IxrNyGHqGKiqRzObZa_.jpg?size=200x266&quality=96&crop=938,149,891,1186&ava=1"
-                                            alt="">
-                                    </div>
-                                    <p>Николай Прохоров</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://vk.com/ruslan_nya">
-                                    <div class=" carousel-item-ftml ">
-                                        <img src="https://sun9-29.userapi.com/impg/MQUZfXt8RbMBS1XYmflDg9dJfxsPTtYKWF7-cw/roMYaahrSrM.jpg?size=1440x2160&quality=96&sign=d8a4b4f864311c6dfd794bc986e24cd9&type=album"
-                                            alt="">
-                                    </div>
-                                    <p>Сулейманов Руслан</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://vk.com/br0ke_b0y">
-                                    <div class=" carousel-item-ftml ">
-                                        <img src="https://sun9-36.userapi.com/impg/fvp0sN5ZjwI_E7yrLUIG9U2qBP_AEXdaw9frcQ/5WbN8VnTl8w.jpg?size=1401x1401&quality=96&sign=b10d08cd153dd6b275c873e3742a90ba&type=album"
-                                            alt="">
-                                    </div>
-                                    <p>Береснев Андрей</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://vk.com/prokhn">
-                                    <div class=" carousel-item-ftml ">
-                                        <img src="https://sun9-52.userapi.com/s/v1/if1/ZSdqsc6f15JuHnqzD2BVo9ZVvyyYaS6ujJ0vBdV1KF9BzVVWLXu01IxrNyGHqGKiqRzObZa_.jpg?size=200x266&quality=96&crop=938,149,891,1186&ava=1"
-                                            alt="">
-                                    </div>
-                                    <p>Николай Прохоров</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://vk.com/ruslan_nya">
-                                    <div class=" carousel-item-ftml ">
-                                        <img src="https://sun9-29.userapi.com/impg/MQUZfXt8RbMBS1XYmflDg9dJfxsPTtYKWF7-cw/roMYaahrSrM.jpg?size=1440x2160&quality=96&sign=d8a4b4f864311c6dfd794bc986e24cd9&type=album"
-                                            alt="">
-                                    </div>
-                                    <p>Сулейманов Руслан</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://vk.com/br0ke_b0y">
-                                    <div class=" carousel-item-ftml ">
-                                        <img src="https://sun9-36.userapi.com/impg/fvp0sN5ZjwI_E7yrLUIG9U2qBP_AEXdaw9frcQ/5WbN8VnTl8w.jpg?size=1401x1401&quality=96&sign=b10d08cd153dd6b275c873e3742a90ba&type=album"
-                                            alt="">
-                                    </div>
-                                    <p>Береснев Андрей</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://vk.com/prokhn">
-                                    <div class=" carousel-item-ftml ">
-                                        <img src="https://sun9-52.userapi.com/s/v1/if1/ZSdqsc6f15JuHnqzD2BVo9ZVvyyYaS6ujJ0vBdV1KF9BzVVWLXu01IxrNyGHqGKiqRzObZa_.jpg?size=200x266&quality=96&crop=938,149,891,1186&ava=1"
-                                            alt="">
-                                    </div>
-                                    <p>Николай Прохоров</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="scroll pb-5 container d-flex align-items-center justify-content-center">
-                        <button class="arrow p-0 border-0 prev" aria-label="prev"></button>
-                        <div class="progress w-100">
-                            <div class="progress-bar" id="progress-bar-1" role="progressbar" aria-valuemin="0"
-                                aria-valuemax="100" aria-label="no-active"></div>
-                            <div class="progress-bar bg-progress-bar-ftml" id="progress-bar-2" role="progressbar"
-                                aria-valuemin="0" aria-valuemax="100" aria-label="active"></div>
-                            <div class="progress-bar" id="progress-bar-3" role="progressbar" aria-valuemin="0"
-                                aria-valuemax="100" aria-label="no-active"></div>
+</div>
+<div class="pt-5 " id="participants">
+    <div class="element-animation container pt-5">
+        <h2>Участники</h2>
+    </div>
+    <div class="carousel w-100" id="carousel2">
+        <div class="element-animation gallery">
+            <ul class="images mb-0 p-0">
+                <li>
+                    <a target="_blank" href="https://vk.com/ruslan_nya">
+                        <div class=" carousel-item-ftml ">
+                            <img class="rounded-circle"
+                                 src="https://sun9-29.userapi.com/impg/MQUZfXt8RbMBS1XYmflDg9dJfxsPTtYKWF7-cw/roMYaahrSrM.jpg?size=1440x2160&quality=96&sign=d8a4b4f864311c6dfd794bc986e24cd9&type=album"
+                                 alt="">
                         </div>
-                        <button class="arrow p-0 border-0 next" aria-label="next"></button>
-                    </div>
-                </div>
-            </div>
+                        <p>Сулейманов Руслан</p>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://vk.com/ruslan_nya">
+                        <div class=" carousel-item-ftml ">
+                            <img class="rounded-circle"
+                                 src="https://sun9-36.userapi.com/impg/fvp0sN5ZjwI_E7yrLUIG9U2qBP_AEXdaw9frcQ/5WbN8VnTl8w.jpg?size=1401x1401&quality=96&sign=b10d08cd153dd6b275c873e3742a90ba&type=album"
+                                 alt="">
+                        </div>
+                        <p>Сулейманов Руслан</p>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://vk.com/ruslan_nya">
+                        <div class=" carousel-item-ftml ">
+                            <img class="rounded-circle"
+                                 src="https://sun9-52.userapi.com/s/v1/if1/ZSdqsc6f15JuHnqzD2BVo9ZVvyyYaS6ujJ0vBdV1KF9BzVVWLXu01IxrNyGHqGKiqRzObZa_.jpg?size=200x266&quality=96&crop=938,149,891,1186&ava=1"
+                                 alt="">
+                        </div>
+                        <p>Сулейманов Руслан</p>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://vk.com/ruslan_nya">
+                        <div class=" carousel-item-ftml ">
+                            <img class="rounded-circle" src="src/images/Ellipse%202.png" alt="">
+                        </div>
+                        <p>Сулейманов Руслан</p>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://vk.com/ruslan_nya">
+                        <div class=" carousel-item-ftml ">
+                            <img class="rounded-circle" src="src/images/Ellipse%202.png" alt="">
+                        </div>
+                        <p>Сулейманов Руслан</p>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://vk.com/ruslan_nya">
+                        <div class=" carousel-item-ftml ">
+                            <img class="rounded-circle" src="src/images/Ellipse%202.png" alt="">
+                        </div>
+                        <p>Сулейманов Руслан</p>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://vk.com/ruslan_nya">
+                        <div class=" carousel-item-ftml ">
+                            <img class="rounded-circle" src="src/images/Ellipse%202.png" alt="">
+                        </div>
+                        <p>Сулейманов Руслан</p>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://vk.com/ruslan_nya">
+                        <div class=" carousel-item-ftml ">
+                            <img class="rounded-circle" src="src/images/Ellipse%202.png" alt="">
+                        </div>
+                        <p>Сулейманов Руслан</p>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://vk.com/ruslan_nya">
+                        <div class=" carousel-item-ftml ">
+                            <img class="rounded-circle" src="src/images/Ellipse%202.png" alt="">
+                        </div>
+                        <p>Сулейманов Руслан end</p>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
-    <div class="pt-5 " id="participants">
-        <div class="element-animation container pt-5">
-            <h2>Участники</h2>
+</div>
+
+<footer class="container pb-5">
+    <div class="row align-items-center">
+        <div class="col-md-5 pt-4 element-animation">
+            <h2>Будем рады видеть <br> тебя в клубе</h2>
         </div>
-        <div class="carousel w-100" id="carousel2">
-            <div class="element-animation gallery">
-                <ul class="images mb-0 p-0">
-                    <li>
-                        <a target="_blank" href="https://vk.com/ruslan_nya">
-                            <div class=" carousel-item-ftml ">
-                                <img class="rounded-circle"
-                                    src="https://sun9-29.userapi.com/impg/MQUZfXt8RbMBS1XYmflDg9dJfxsPTtYKWF7-cw/roMYaahrSrM.jpg?size=1440x2160&quality=96&sign=d8a4b4f864311c6dfd794bc986e24cd9&type=album"
-                                    alt="">
-                            </div>
-                            <p>Сулейманов Руслан</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://vk.com/ruslan_nya">
-                            <div class=" carousel-item-ftml ">
-                                <img class="rounded-circle"
-                                    src="https://sun9-36.userapi.com/impg/fvp0sN5ZjwI_E7yrLUIG9U2qBP_AEXdaw9frcQ/5WbN8VnTl8w.jpg?size=1401x1401&quality=96&sign=b10d08cd153dd6b275c873e3742a90ba&type=album"
-                                    alt="">
-                            </div>
-                            <p>Сулейманов Руслан</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://vk.com/ruslan_nya">
-                            <div class=" carousel-item-ftml ">
-                                <img class="rounded-circle"
-                                    src="https://sun9-52.userapi.com/s/v1/if1/ZSdqsc6f15JuHnqzD2BVo9ZVvyyYaS6ujJ0vBdV1KF9BzVVWLXu01IxrNyGHqGKiqRzObZa_.jpg?size=200x266&quality=96&crop=938,149,891,1186&ava=1"
-                                    alt="">
-                            </div>
-                            <p>Сулейманов Руслан</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://vk.com/ruslan_nya">
-                            <div class=" carousel-item-ftml ">
-                                <img class="rounded-circle" src="src/images/Ellipse%202.png" alt="">
-                            </div>
-                            <p>Сулейманов Руслан</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://vk.com/ruslan_nya">
-                            <div class=" carousel-item-ftml ">
-                                <img class="rounded-circle" src="src/images/Ellipse%202.png" alt="">
-                            </div>
-                            <p>Сулейманов Руслан</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://vk.com/ruslan_nya">
-                            <div class=" carousel-item-ftml ">
-                                <img class="rounded-circle" src="src/images/Ellipse%202.png" alt="">
-                            </div>
-                            <p>Сулейманов Руслан</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://vk.com/ruslan_nya">
-                            <div class=" carousel-item-ftml ">
-                                <img class="rounded-circle" src="src/images/Ellipse%202.png" alt="">
-                            </div>
-                            <p>Сулейманов Руслан</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://vk.com/ruslan_nya">
-                            <div class=" carousel-item-ftml ">
-                                <img class="rounded-circle" src="src/images/Ellipse%202.png" alt="">
-                            </div>
-                            <p>Сулейманов Руслан</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://vk.com/ruslan_nya">
-                            <div class=" carousel-item-ftml ">
-                                <img class="rounded-circle" src="src/images/Ellipse%202.png" alt="">
-                            </div>
-                            <p>Сулейманов Руслан end</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="col-md-7 pt-4 element-animation">
+            <a class="btn btn-ftml py-3 px-4" target="_blank" href="https://vk.com/ftmlclub" id="vk">
+                <svg width="25" height="25" fill="none">
+                    <use xlink:href="./src/images/sprite.svg#vk"></use>
+                </svg>
+                Вступить в группу, чтобы быть в курсе всех событий
+            </a>
         </div>
     </div>
-    <footer class="container pb-5">
-        <div class="row align-items-center">
-            <div class="col-md-5 pt-4 element-animation">
-                <h2>Будем рады видеть <br> тебя в клубе</h2>
-            </div>
-            <div class="col-md-7 pt-4 element-animation">
-                <a class="btn btn-ftml py-3 px-4" target="_blank" href="https://vk.com/ftmlclub" id="vk">
-                    <img src="src/images/vk.png" width="25" height="25" alt="">
-                    Вступить в группу, чтобы быть в курсе всех событий
-                </a>
-            </div>
-        </div>
-    </footer>
-    <script src="libs/popper/popper.min.js"></script>
-    <script src="libs/bootstrap/bootstrap.min.js"></script>
-    <script src="src/js/script.js"></script>
+</footer>
+<script src="libs/popper/popper.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="src/js/script.js"></script>
 </body>
 
 </html>

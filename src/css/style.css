@@ -189,10 +189,7 @@ nav {
 }
 
 .arrow {
-  background: url('../images/Arrow\ 1.png');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: none;
   content: "";
   width: 2.5em;
   height: 2.5em;
